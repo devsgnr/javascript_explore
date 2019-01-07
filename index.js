@@ -1,4 +1,4 @@
-function person(name, yearOfBirth) {
+function Person(name, yearOfBirth) {
 	this.name = name;
 	this.yearOfBirth = yearOfBirth;
 	this.year = new Date().getFullYear();
@@ -7,8 +7,8 @@ function person(name, yearOfBirth) {
 	this.allowAccess = this.age >= 18 ? true : false;
 }
 
-var emma = new person('Emmanuel Watila', 1999);
-console.log(emma);
+var johnDoe = new Person('John Doe', 1988),
+	jamesDoe = new Person('James Doe', 2004),
+	janeDoe = new Person('Jane Doe', 1960);
 
-var johnDoe = new person('John Doe Anonymous', 1998);
-console.log(johnDoe);
+console.table([ johnDoe, jamesDoe, janeDoe ]);
