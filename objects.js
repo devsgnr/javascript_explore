@@ -34,4 +34,4 @@ user = {
 user.hashPassword('@Itguru190_');
 user.findAge();
 
-console.log(user);
+console.warn(user);
