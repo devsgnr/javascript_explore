@@ -32,6 +32,7 @@ function Person(name, yearOfBirth) {
 	* @param {number} yearOfBirth - Year of Birth of User
 	* @return {object} User - Returns new User object
 	*
+	*
 */
 class User {
 	constructor(name, yearOfBirth) {

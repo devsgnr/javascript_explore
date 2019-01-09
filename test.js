@@ -3,7 +3,7 @@
 mocha.setup('bdd');
 let assert = chai.assert;
 
-// Testing
+// Testing.
 describe('typeCheck', function() {
 	//Check if string values are {true}
 	describe('stringCheck', function() {
