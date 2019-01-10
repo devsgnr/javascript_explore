@@ -1,6 +1,6 @@
 'use strict';
 
-let encryptPassword = function(password) {
+function encryptPassword(password) {
 	let _ASCII_, _SHIFTED_, _HASH_, _HASHED_;
 	const _KEY_ = 9;
 	for (let i = 0; i < password.length; i++) {
@@ -11,7 +11,7 @@ let encryptPassword = function(password) {
 		_HASHED_ += _HASH_;
 	}
 	return _HASHED_;
-};
+}
 
 let user = {
 	name: 'Emmanuel Watila',
