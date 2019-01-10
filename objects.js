@@ -1,18 +1,5 @@
 'use strict';
 
-function encryptPassword(password) {
-	let _ASCII_, _SHIFTED_, _HASH_, _HASHED_;
-	const _KEY_ = 9;
-	for (let i = 0; i < password.length; i++) {
-		_ASCII_ = password.charCodeAt(i);
-		_SHIFTED_ = _ASCII_ + _KEY_;
-		_HASH_ = String.fromCharCode(_SHIFTED_);
-
-		_HASHED_ += _HASH_;
-	}
-	return _HASHED_;
-}
-
 let user = {
 	name: 'Emmanuel Watila',
 	yob: 1999,
@@ -28,14 +15,24 @@ let user = {
 		 * @return {this.value}
 	*/
 	encryptPassword: function(password) {
-		this.password = encryptPassword(password);
+		let _ASCII_, _SHIFTED_, _HASH_;
+		let _HASHED_;
+		const _KEY_ = 9;
+		for (let i = 0; i < password.length; i++) {
+			_ASCII_ = password.charCodeAt(i);
+			_SHIFTED_ = _ASCII_ + _KEY_;
+			_HASH_ = String.fromCharCode(_SHIFTED_);
+
+			_HASHED_ += _HASH_;
+			return _HASHED_;
+		}
 	},
 	findAge: function() {
 		this.age = new Date().getFullYear() - this.yob;
 	}
 };
 
-user.encryptPassword('&Itguru190&');
+user.password = user.encryptPassword('&Itguru190&');
 user.findAge();
 
 console.log(user);
@@ -49,4 +46,3 @@ let shoppingCart = {};
  * 
  * 
 */
-//alert(shoppingCart);
