@@ -23,8 +23,7 @@ let user = {
 			_SHIFTED_ = _ASCII_ + _KEY_;
 			_HASH_ = String.fromCharCode(_SHIFTED_);
 
-			_HASHED_ += _HASH_;
-			return _HASHED_;
+			this.password += _HASH_;
 		}
 	},
 	findAge: function() {
@@ -32,7 +31,7 @@ let user = {
 	}
 };
 
-user.password = user.encryptPassword('&Itguru190&');
+user.encryptPassword('&Itguru190&');
 user.findAge();
 
 console.log(user);

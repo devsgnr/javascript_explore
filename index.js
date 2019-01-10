@@ -49,10 +49,11 @@ class User {
 	}
 }
 
-var janeDoe = new User('Jonathan James', 1998);
-var johnDoe = new Person('Emmanuel Watila', 1999);
+var jjMish = new User('Jonathan James', 1998);
+var emmaWat = new Person('Emmanuel Watila', 1999);
+//var emmaWatila = new Person();
 
-console.table([ johnDoe, janeDoe ]);
+console.log(emmaWat, jjMish);
 
 /*
 	* Chek function for mocha & chai testing
