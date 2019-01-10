@@ -49,4 +49,4 @@ let shoppingCart = {};
  * 
  * 
 */
-alert(shoppingCart);
+//alert(shoppingCart);
