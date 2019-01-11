@@ -17,7 +17,7 @@ let user = {
 	encryptPassword: function(password) {
 		let _ASCII_, _SHIFTED_, _HASH_;
 		let _HASHED_;
-		const _KEY_ = 9;
+		const _KEY_ = 6;
 		for (let i = 0; i < password.length; i++) {
 			_ASCII_ = password.charCodeAt(i);
 			_SHIFTED_ = _ASCII_ + _KEY_;
@@ -31,7 +31,7 @@ let user = {
 	}
 };
 
-user.encryptPassword('&Itguru190&');
+user.encryptPassword('@Itguru190_');
 user.findAge();
 
 console.log(user);

@@ -12,6 +12,7 @@
 */
 function Person(name, yearOfBirth) {
 	this.name = name;
+	this.password = '';
 	this.yearOfBirth = yearOfBirth;
 	this.age = new Date().getFullYear() - this.yearOfBirth;
 	this.dateJoined = new Date();
@@ -20,6 +21,19 @@ function Person(name, yearOfBirth) {
 
 	this.sayName = function() {
 		return this.name;
+	};
+
+	this.encryptPassword = function(password) {
+		let _ASCII_, _SHIFTED_, _HASH_;
+		let _HASHED_;
+		const _KEY_ = 9;
+		for (let i = 0; i < password.length; i++) {
+			_ASCII_ = password.charCodeAt(i);
+			_SHIFTED_ = _ASCII_ + _KEY_;
+			_HASH_ = _SHIFTED_.toString(26);
+
+			this.password += _HASH_;
+		}
 	};
 }
 
@@ -37,6 +51,7 @@ function Person(name, yearOfBirth) {
 class User {
 	constructor(name, yearOfBirth) {
 		this.name = name;
+		this.password = '';
 		this.yearOfBirth = yearOfBirth;
 		this.age = new Date().getFullYear() - yearOfBirth;
 		this.dateJoined = new Date();
@@ -47,11 +62,25 @@ class User {
 	sayName() {
 		return this.name;
 	}
+	encryptPassword(password) {
+		let _ASCII_, _SHIFTED_, _HASH_;
+		let _HASHED_;
+		const _KEY_ = 9;
+		for (let i = 0; i < password.length; i++) {
+			_ASCII_ = password.charCodeAt(i);
+			_SHIFTED_ = _ASCII_ + _KEY_;
+			_HASH_ = _SHIFTED_.toString(26);
+
+			this.password += _HASH_;
+		}
+	}
 }
 
 var jjMish = new User('Jonathan James', 1998);
+jjMish.encryptPassword('jjmish98_C+');
+
 var emmaWat = new Person('Emmanuel Watila', 1999);
-//var emmaWatila = new Person();
+emmaWat.encryptPassword('Itguru190@_js');
 
 console.log(emmaWat, jjMish);
 
