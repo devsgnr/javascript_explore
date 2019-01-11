@@ -90,6 +90,7 @@ console.log(emmaWat, jjMish);
  	* @param {type} to be checked
 	* @return {boolean} result of check
 	*
+	*
  */
 function checkTypeStr(type) {
 	let result = typeof type;
