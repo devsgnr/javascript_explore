@@ -3,6 +3,8 @@
 /*
 	* Using Function Objects
 	*
+	* A Constructor Function
+	*
 	* Returns the {Person} Object
 	*
 	* @param {string} name - Name of person
