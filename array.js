@@ -53,7 +53,6 @@ let users = [ { id: 1, name: 'Emmanuel' }, { id: 2, name: 'Jonathan' } ];
 let user = users.findIndex((item) => item.name == 'Emmanuel');
 
 console.log(user.name);
-<<<<<<< HEAD
 
 // .map - it calls the function for each element of the array
 // and returns the array results.
@@ -129,6 +128,3 @@ let userS = [ { age: 12 }, { age: 16 }, { age: 32 } ];
 let youngsters = userS.filter(useR.younger, useR);
 
 console.log(youngsters.length);
-=======
-//
->>>>>>> 52f9e5af7b2551a61542dc8b695ea2a230bf3764
