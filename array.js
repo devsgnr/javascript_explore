@@ -53,7 +53,6 @@ let users = [ { id: 1, name: 'Emmanuel' }, { id: 2, name: 'Jonathan' } ];
 let user = users.findIndex((item) => item.name == 'Emmanuel');
 
 console.log(user.name);
-<<<<<<< HEAD
 
 // .map - it calls the function for each element of the array
 // and returns the array results.
