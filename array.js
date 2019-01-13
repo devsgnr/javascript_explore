@@ -129,6 +129,4 @@ let userS = [ { age: 12 }, { age: 16 }, { age: 32 } ];
 let youngsters = userS.filter(useR.younger, useR);
 
 console.log(youngsters.length);
-=======
-//
->>>>>>> 52f9e5af7b2551a61542dc8b695ea2a230bf3764
+
