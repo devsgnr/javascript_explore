@@ -95,6 +95,8 @@ meetup = {
 
 room.occupiedBy = meetup;
 
+console.log(room);
+
 console.log(
 	JSON.stringify(meetup, function replacer(key, value) {
 		console.log(`${key} : ${value}`);
