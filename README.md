@@ -8,25 +8,26 @@ many like
 * Variable
 * Loops
 * Arrays
+* Functions
 * Highers Order Array Functions
 * Maps & WeakMaps
 * Sets & WeakSets
 * Objects
 * Constructor Functions
 * Date & Time
+* JavaScript Objects
 * JSON, and JSON mehtods(.stringify and .parse)
 * Recursion
-
-Next on my list of things to learn are :
-
-1. Functions
-2. Prototypes
-3. Inheritance
-4. ES6 Classes
-5. Class constructor
+* Prototypes (Flags, Descriptors, Getters and Setters)
+* Inheritance
+* OOP
+* ES6 Classes
+* Class constructor
+* Super - super()
+* Classs checking - instanceof
+* Mixins
 
 and more...
 
-All these were gotten from the [JavaScript.info](https://javascript.info)
-which covers alot of basic to advanced concepts of JavaScript with
-tasks after each lesson.
+All these were gotten from the [JavaScript.info](https://javascript.info) and [Traversy Media](https://www.youtube.com/traversymedia)
+which covers alot of basic to advanced concepts of JavaScript.
